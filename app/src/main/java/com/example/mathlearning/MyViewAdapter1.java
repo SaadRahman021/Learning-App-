@@ -34,10 +34,32 @@ public class MyViewAdapter1 extends ArrayAdapter<Btn> {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(btn1.getText() == "Add")
-                    btn1.setText("AB");
+                if(btn1.getText() == "Add") {
+                    Intent myIntent = new Intent(getContext(), MainActivity3.class);
+                    getContext().startActivity(myIntent);
+                }
+                if(btn1.getText() == "Multiply"){
+                    Intent myIntent = new Intent(getContext(), MainActivity6.class);
+                    getContext().startActivity(myIntent);
+                }
             }
         });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(btn2.getText() == "Subtract") {
+                    Intent myIntent = new Intent(getContext(), MainActivity4.class);
+                    getContext().startActivity(myIntent);
+                }
+                if(btn2.getText() == "Divide"){
+                    Intent myIntent = new Intent(getContext(), MainActivity5.class);
+                    getContext().startActivity(myIntent);
+                }
+            }
+        });
+
+       
         return convertView;
     }
 }

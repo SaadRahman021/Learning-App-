@@ -12,8 +12,6 @@ import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
 
-   // Button add,sub,div,mul;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,37 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         MyViewAdapter1 adapter = new MyViewAdapter1(this, studentArrayList);
         ListView listView = findViewById(R.id.myListView);
         listView.setAdapter(adapter);
-        /*
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                MainActivity2.this.startActivity(myIntent);
-            }
-        });
 
-        sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity2.this, MainActivity4.class);
-                MainActivity2.this.startActivity(myIntent);
-            }
-        });
-
-        div.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity2.this, MainActivity5.class);
-                MainActivity2.this.startActivity(myIntent);
-            }
-        });
-        mul.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity2.this, MainActivity6.class);
-                MainActivity2.this.startActivity(myIntent);
-            }
-        });*/
     }
 
 
