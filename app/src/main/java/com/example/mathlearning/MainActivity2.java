@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    Button add,sub,div,mul;
+   // Button add,sub,div,mul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +20,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
 
-        add = findViewById(R.id.button6);
-        sub = findViewById(R.id.button10);
-        div = findViewById(R.id.button9);
-        mul = findViewById(R.id.button5);
-
+        ArrayList<Btn> studentArrayList = new ArrayList<Btn>();
+        studentArrayList.add(new Btn("Add","Subtract"));
+        studentArrayList.add(new Btn("Multiply","Divide"));
+        MyViewAdapter1 adapter = new MyViewAdapter1(this, studentArrayList);
+        ListView listView = findViewById(R.id.myListView);
+        listView.setAdapter(adapter);
+        /*
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +56,8 @@ public class MainActivity2 extends AppCompatActivity {
                 Intent myIntent = new Intent(MainActivity2.this, MainActivity6.class);
                 MainActivity2.this.startActivity(myIntent);
             }
-        });
+        });*/
     }
+
+
 }
