@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,8 +23,8 @@ public class MyViewAdapter1 extends ArrayAdapter<Btn> {
 
         Btn student = getItem(position);
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.btn_layout, parent, false);
-        Button btn2 = convertView.findViewById(R.id.button2);
-        Button btn1 = convertView.findViewById(R.id.button);
+        Button btn2 = convertView.findViewById(R.id.button6);
+        Button btn1 = convertView.findViewById(R.id.button5);
 
         btn2.setText(student.btn2);
         btn1.setText(student.btn1);
@@ -59,7 +57,6 @@ public class MyViewAdapter1 extends ArrayAdapter<Btn> {
             }
         });
 
-       
         return convertView;
     }
 }
