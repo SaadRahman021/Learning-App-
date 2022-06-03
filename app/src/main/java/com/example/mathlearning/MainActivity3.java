@@ -133,20 +133,17 @@ public class MainActivity3 extends AppCompatActivity {
 
         viewFlipper = findViewById(R.id.view_flipper);
 
-
-        viewFlipper.setFlipInterval(15000);
-        viewFlipper.startFlipping();
     }
 
     public void previousView(View v) {
-        //viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
+        viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         //viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
         viewFlipper.showPrevious();
     }
 
     public void nextView(View v) {
         //viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
-        //viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
+        viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
         viewFlipper.showNext();
     }
 }
