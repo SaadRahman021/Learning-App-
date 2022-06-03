@@ -10,19 +10,21 @@
         android:id="@+id/imageView"
         android:layout_width="379dp"
         android:layout_height="238dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
         app:srcCompat="@drawable/math_img" />
 
     <ListView
         android:id="@+id/myListView"
-        android:layout_width="413dp"
-        android:layout_height="349dp"
+        android:layout_width="419dp"
+        android:layout_height="217dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
