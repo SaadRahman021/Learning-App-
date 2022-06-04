@@ -215,7 +215,7 @@
         android:layout_marginBottom="165dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
-        android:text="Addition"
+        android:text="Multiplication"
         android:textColor="@color/black"
         app:rippleColor="@color/white" />
 
