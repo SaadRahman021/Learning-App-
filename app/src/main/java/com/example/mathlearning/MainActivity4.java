@@ -116,6 +116,7 @@ public class MainActivity4 extends AppCompatActivity {
         listView9.setAdapter(adapter9);
 
         i++;
+        
         ArrayList<Btn> studentArray1 = new ArrayList<Btn>();
         studentArray1.add(new Btn("1 - 10 = " + (-i+1),"2 - 10 =" + (-i+2)));
         studentArray1.add(new Btn("3 - 10 = " + (-i+3),"4 - 10 =" + (-i+4)));
