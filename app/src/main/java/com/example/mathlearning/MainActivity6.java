@@ -5,19 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 
 public class MainActivity6 extends AppCompatActivity {
 
+    TextView text;
     private ViewFlipper viewFlipper;
     int  i = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_main3);
 
+        text = findViewById(R.id.textV);
+        text.setText("Multiplication");
         ArrayList<Btn> studentArrayList = new ArrayList<Btn>();
         studentArrayList.add(new Btn("1 x 1 = " + (i+1),"2 x 1 =" + (i+2)));
         studentArrayList.add(new Btn("3 x 1 = " + (i+3),"4 x 1 =" + (i+4)));

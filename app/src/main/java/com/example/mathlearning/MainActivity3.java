@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    TextView text;
     private ViewFlipper viewFlipper;
     int  i = 1;
     @Override
@@ -21,7 +22,8 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-
+        text = findViewById(R.id.textV);
+        text.setText("Addition");
         ArrayList<Btn> studentArrayList = new ArrayList<Btn>();
         studentArrayList.add(new Btn("1 + 1 = "+ (i+1),"2 + 1 =" + (i+2)));
         studentArrayList.add(new Btn("3 + 1 = "+ (i+3),"4 + 1 =" + (i+4)));
